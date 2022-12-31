@@ -10,21 +10,6 @@
   <!-- Site Properties -->
   <title>TeViS</title>
 
-
-  <!-- SEO -->
-  <!-- <meta property="og:title" content="Airbert: In-domain Pretraining for Vision-and-Language Navigation" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="SOTA in multiple VLN tasks by pre-training on Airbnb" />
-  <meta property="og:image" content="https://airbert-vln.github.io/assets/img/teaser.jpeg" />
-  <meta property="og:url" content="https://airbert-vln.github.io/" /> -->
-
-  <!-- Twitter Card data -->
-  <!-- <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Airbert: In-domain Pretraining for Vision-and-Language Navigation" />
-  <meta name="twitter:description" content="SOTA in multiple VLN tasks by pre-training on Airbnb" />
-  <meta name="twitter:image" content="https://airbert-vln.github.io/assets/img/teaser_square.jpeg" /> -->
-
-
   <!-- You MUST include jQuery before Fomantic -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
@@ -40,7 +25,7 @@
 
     .masthead.segment {
       min-height: 700px;
-      padding: 0em 0em;  /* 目录栏padding */
+      padding: 0em 0em;  /* munu padding */
     }
 
     .masthead .logo.item img {
@@ -140,7 +125,6 @@
     }
 
     .masthead {
-      /* background-image: url('/tevis/assets/img/bg3.png') !important; */
       background-image: url('/tevis/assets/img/null.png') !important;
       background-size: cover !important;
     }
@@ -199,10 +183,7 @@
   <div class="ui large top fixed hidden menu" style="background-color:rgb(224, 224, 229);">
     <div class="ui container">
       <a href="tevis.html" class="active item"><i class="home icon"></i>Home</a>
-      <!-- <a href="demo.html" class="item"><i class="robot icon"></i>Demo</a> -->
       <a href="/tevis/assets/tevis.pdf" class="item"><i class="book icon"></i>Paper</a>
-      <!-- <a href="https://arxiv.org/abs/2108.09105" class="item"><i class="glasses icon"></i>arXiv</a> -->
-      <!-- <a href="bibtex.txt" class="item"><i class="quote right icon"></i>BibTeX</a> -->
       <a href="#bib" data-target="#bib" class="item"><i class="quote right icon"></i>BibTeX</a>
       <a href="https://github.com/guxu313/scripts-translator/tree/release/metadata" class="item"><i class="align database icon"></i>Dataset</a>
       <a href="https://github.com/guxu313/scripts-translator/tree/release" class="item"><i class="github icon"></i>GitHub</a>
@@ -219,7 +200,7 @@
   </div>
 
 
-  <!-- Page Contents 主页内容-->
+  <!-- Page Contents -->
   <div class="pusher" >
     <div class="ui inverted vertical masthead center aligned segment">
       <div class="ui large secondary inverted pointing menu" style="background-color:#373435ff;">
@@ -230,24 +211,17 @@
           <a href="tevis.html" class="active item">
             <i class="home icon"></i>Home
           </a>
-          <!-- <a href="/tevis/assets/tevis.pdf" class="item"><i class="book icon"></i>Paper</a> -->
-          <!-- <a href="bibtex.txt" class="item"><i class="quote right icon"></i>BibTeX</a> -->
-          <!-- <a href="#bib" data-target="#bib" class="item"><i class="quote right icon"></i>BibTeX</a>
-          <a href="https://github.com/guxu313/scripts-translator/tree/release/metadata" class="item"><i class="align database icon"></i>Dataset</a>
-          <a href="https://github.com/guxu313/scripts-translator/tree/release" class="item"><i class="github icon"></i>GitHub</a> -->
         </div>
       </div>
 
       <div class="ui  text container" style="background-color: rgba(255,255,255,0.3); ">
         <h1 class="ui inverted header" style="color: #000000;">
-          <!-- <font face="Brush Script MT">TeViS</font> -->
           TeViS
         </h1>
         <h2 style="color: #000000;">
           Translating Text Synopses to Video Storyboards
         </h2>
         <h4 style="color: #000000;">
-          <!-- style="color:#FF336B;" -->
           <a href="https://guxu313.github.io/" style="color: #000000;">Xu Gu</a>&nbsp;<sup>1</sup>,
           <a href="https://scholar.google.com/citations?hl=zh-CN&user=DuSxNqgAAAAJ" style="color: #000000;"> Yuchong Sun</a>&nbsp;<sup>1</sup>,
           <a href="https://github.com/nfy-dot" style="color: #000000;"> Feiyue Ni</a>&nbsp;<sup>1</sup>,
@@ -272,13 +246,6 @@
       </div>
     </div>
 
-    <!-- <div class="ui center aligned container segment">
-      <a class="ui primary small labeled icon button" ><i class="align book icon"></i>Paper</a>
-      <a href="#bib" class="ui primary small labeled icon button"><i class="align quote right icon"></i>BibTeX</a>
-      <button class="ui primary small labeled icon button"><i class="align database icon"></i>Dataset</button>
-      <a class="ui primary small labeled icon button"><i class="align github icon"></i>GitHub</a>
-    </div> -->
-
     <div class="ui vertical stripe segment" id="motivation">
       <div class="ui middle aligned stackable grid container">       
 
@@ -299,9 +266,6 @@
               storyboard to visualize an input text synopsis. 
             </p>
           </div>
-          <!-- <div class="eight wide right floated column">
-            <img src="/tevis/assets/img/task.png" class="ui massive image">
-          </div> -->
         </div>
 
         <div class="row">
@@ -311,7 +275,6 @@
                 Dataset
               </div>
               What is <a href="https://ruc-aimind.github.io/projects/tevis.html">MovieNet-TeViS</a> Dataset?&ensp;
-              <!-- <em data-emoji=':film_frames:'></em> -->
             </h3>
             <p>
               In the TeViS task, we aim to retrieve an ordered sequence of 
@@ -321,77 +284,13 @@
               the public <a href="https://movienet.github.io/">MovieNet</a> dataset.<br/>
               The following figure shows how we differ from existing tasks, other datasets.
             </p>
-            <!-- <img src="/tevis/assets/img/dataset.png" class="ui massive image"> -->
             <img class="ui fluid image" src="/tevis/assets/img/dataset1.png" />
           </div>
-          <!-- <div class="eight wide right floated column">
-            <img src="/tevis/assets/img/task.png" class="ui massive image">
-          </div> -->
         </div>
-
-        <!-- <div class="row center aligned">
-          <div class="fourteen wide column"> -->
-            <!-- <a href="demo.html" class="ui primary large labeled icon button"><i class="align robot icon"></i>&nbsp;Demo</a> -->
-            <!-- <a class="ui primary large labeled icon button"><i class="align book icon"></i>Paper</a> -->
-            <!-- <button class="ui primary large labeled icon button"><i class="align glasses icon"></i>arXiv</button> -->
-            <!-- <a href="#bib" class="ui primary large labeled icon button"><i class="align quote right icon"></i>BibTeX</a>
-            <button class="ui primary large labeled icon button"><i class="align database icon"></i>Dataset</button>
-            <a class="ui primary large labeled icon button"><i class="align github icon"></i>GitHub</a>
-          </div>
-        </div> -->
 
       </div>
 
     </div>
-
-
-    <!-- <div class="ui vertical stripe segment">
-      <div class="ui middle aligned stackable grid container">
-        <h1 class="ui header">Abstract</h1>
-        <p>A storyboard is a roadmap for video creation which consists of shot-by-shot images to visualize key plots in
-          a
-          text synopsis. Creating video storyboards however remains challenging which not only requires association
-          between
-          high-level texts and images, but also demands for long-term reasoning to make transitions smooth across shots.
-          In this
-          paper, we propose a new task called Text synopsis to Video Storyboard (TeViS) which aims to retrieve an
-          ordered sequence
-          of images to visualize the text synopsis. We construct a MovieNet-TeViS benchmark based on the public
-          MovieNet dataset. It contains 10K text synopses each paired with keyframes that are manually selected from
-          corresponding
-          movies by considering both relevance and cinematic coherence. We also present an encoder-decoder baseline
-          for the task. The model uses a pretrained vision-and-language model to improve high-level text-image matching.
-          To improve coherence in long-term shots, we further propose to pre-train the decoder on large-scale movie
-          frames
-          without text. Experimental results demonstrate that our proposed model significantly outperforms other models
-          to create
-          text-relevant and coherent storyboards. Nevertheless, there is still a large gap compared to human performance
-          suggesting room for promising future work.
-        </p>
-
-      </div>
-    </div> -->
-
-
-    <!-- <div class="ui vertical stripe segment">
-      <div class="ui middle aligned stackable grid container">
-        <h1 class="ui header">MovieNet-TeViS dataset</h1>
-
-        <p>In the TeViS task, we aim to retrieve an ordered sequence of 
-          images from large-scale movie database as video
-          storyboard to visualize an input text synopsis. For this purpose,
-          we collect the MovieNet-TeViS benchmark based on
-          the public <a href="https://movienet.github.io/">MovieNet</a> dataset.
-        </p>
-
-        <div class="ui center aligned raised very padded text container segment">
-          <img class="ui fluid image" src="/tevis/assets/img/dataset.png" />
-        </div>
-
-      </div>
-    </div> -->
-
-
 
     <div class="ui vertical stripe segment">
       <div class="ui middle aligned stackable grid container">
